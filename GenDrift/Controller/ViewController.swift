@@ -9,7 +9,6 @@
 import UIKit
 
 var fixedLost = [0,0]
-var userTest = Test()
 
 class ViewController: UIViewController {
     
@@ -23,20 +22,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-//        Open.target = self.revealViewController()
-        Open.action = Selector("revealToggle:")
-        
-//        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        
-        if (varView == 0) {
-            Label.text = "Strings"
-        }
-        else {
-            Label.text = "Others"
-        }
-        
+        // Do any additional setup after loading the view, typically from a nib.        
     }
 }
 

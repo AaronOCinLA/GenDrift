@@ -17,7 +17,6 @@ class MainViewController : UIViewController {
     @IBOutlet weak var lblPopSize: UILabel!
     @IBOutlet weak var lblNumPop: UILabel!
     @IBOutlet weak var lblNumGen: UILabel!
-    @IBOutlet weak var btnBegin: UIButton!
     @IBOutlet weak var viewMain: DrawLines!
     
     // Object variables
@@ -34,53 +33,12 @@ class MainViewController : UIViewController {
     @IBOutlet weak var lblXAxis3: UILabel!
     
     
-    // Timer
-    var startTime = NSDate().timeIntervalSince1970
-    var stopTime = NSDate().timeIntervalSince1970
+    // MARK: - Viewcontroller life cycle
     
-    // Question Label
-    @IBOutlet weak var lblQuestion: UILabel!
-    
-    @IBAction func clickedBegin(_ sender: Any) {
-        userTest.questionNum = (userTest.questionNum + 1)%3
-
-        startTime = NSDate().timeIntervalSince1970
-        stopTime = NSDate().timeIntervalSince1970
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
-        // Load question
-        lblQuestion.text = userTest.arrQuestions[userTest.questionNum]
-    }
-    
-
-    
-    @IBAction func clickedSimulate(_ sender: UIButton) {
-        
-        // reset fixed/lost counter
-        fixedLost = [0,0]
-        
-        // Set UI Version Number
-        userTest.UIVersionNum = 1
-        
-        
-        updateLabels()
-        self.viewDidAppear(true)
-        
-        // drawLines()
-        drawLines()
-        
-        // End timer get time value
-        stopTime = NSDate().timeIntervalSince1970
-        
-        // Record timestamp
-        userTest.timeStamp = (stopTime - startTime)
-        
-        // Resest Start Time
-        startTime = NSDate().timeIntervalSince1970
-    }
-    
-    @IBAction func updateSliderValue(_ sender: UISlider) {
-        inputValues.inputValues[sender.tag] = Int(sender.value)
-        updateLabels()
+        navigationController?.navigationBar.backgroundColor = UIColor(red: 99, green: 181, blue: 229)        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -90,12 +48,23 @@ class MainViewController : UIViewController {
         removeSubView()
     }
     
-    override func viewDidLoad() {
-      
+    // MARK: - Methods
+    
+    @IBAction func clickedSimulate(_ sender: UIButton) {
         
+        
+        updateLabels()
+        self.viewDidAppear(true)
+        
+        // drawLines()
+        drawLines()
     }
     
-    // MARK: - Methods
+    @IBAction func updateSliderValue(_ sender: UISlider) {
+        inputValues.inputValues[sender.tag] = Int(sender.value)
+        print("Updating tag# " + String(sender.tag) + " with value: " + String(sender.value))
+        updateLabels()
+    }
     
     func drawLines() {
         // Draws lines

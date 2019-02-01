@@ -28,8 +28,4 @@ public class Population {
         dblArr = [[0.0],[0.0]]
         fixLossArr = [0,0]
     }
-    
-    //func countFixedAndLost() {
-        // print("Fixed is: [\(fixLossArr[0]), \(fixLossArr[1])]")
-    // }
 }

@@ -41,6 +41,10 @@ class DrawLines: UIView {
     
     var arrY = [Int](repeating: 0, count: tlY)
     
+    
+    // MARK: - Methods
+    
+    
     // Drawing code
     override func draw(_ rect: CGRect) {
         
@@ -61,16 +65,7 @@ class DrawLines: UIView {
             for j in 1 ... glNumGen {
                 arrLines[i].addLine(to: CGPoint(x: xCord * j, y:arrY[j]))
             }
-        }
-        
-        // Testing section
-        // All fixate
-        var percentFixed = 0.00
-        percentFixed = (Double(fixedLost[0] + fixedLost[1])/Double(glNumPop+1))
-
-        // Check answers
-        userTest.checkAnsewrs(rate: percentFixed)
-        
+        }        
         
         // Create array of CAShape Layer
         var arrPathLayers: [CAShapeLayer] = [CAShapeLayer]()
@@ -116,15 +111,6 @@ class DrawLines: UIView {
             rateA = (Double(countA) / Double(glPopSize+1) )
             arrY[j] = Int(rateA * 640) + 20
             countA = 0
-        }
-        
-        
-
-        if (arrY[glNumGen] == 660) {
-            fixedLost[1] = fixedLost[1] + 1
-        }
-        else if (arrY[glNumGen] == 20) {
-            fixedLost[0] = fixedLost[0] + 1
         }
     }
 }
