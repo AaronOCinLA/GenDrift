@@ -8,7 +8,7 @@ import Foundation
 import UIKit
 
 
-class Version1 : UIViewController {
+class MainViewController : UIViewController {
     
     
     
@@ -91,11 +91,11 @@ class Version1 : UIViewController {
     }
     
     override func viewDidLoad() {
-        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+      
         
-        // Hide question label
-        self.lblQuestion.text = ""
     }
+    
+    // MARK: - Methods
     
     func drawLines() {
         // Draws lines
@@ -110,7 +110,6 @@ class Version1 : UIViewController {
         dl.tag = 100
         self.view.addSubview(dl)
     }
-    
     
     func updateLabels() {
         

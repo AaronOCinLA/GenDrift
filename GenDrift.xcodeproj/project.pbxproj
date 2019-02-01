@@ -12,11 +12,7 @@
 		6354F4152183A1F9006F6C07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6354F4132183A1F9006F6C07 /* Main.storyboard */; settings = {ASSET_TAGS = (3, ); }; };
 		6354F4172183A1FB006F6C07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6354F4162183A1FB006F6C07 /* Assets.xcassets */; };
 		6354F41A2183A1FB006F6C07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6354F4182183A1FB006F6C07 /* LaunchScreen.storyboard */; };
-		6354F4242183A600006F6C07 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6354F4232183A600006F6C07 /* SWRevealViewController.m */; };
-		6354F4262183ABA2006F6C07 /* BackTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6354F4252183ABA2006F6C07 /* BackTableVC.swift */; };
-		6354F4282183B775006F6C07 /* Version1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6354F4272183B775006F6C07 /* Version1.swift */; };
-		6354F42A2183B821006F6C07 /* Version2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6354F4292183B821006F6C07 /* Version2.swift */; };
-		6354F42C2183B82B006F6C07 /* Version3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6354F42B2183B82B006F6C07 /* Version3.swift */; };
+		6354F4282183B775006F6C07 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6354F4272183B775006F6C07 /* MainViewController.swift */; };
 		63861E2021B49560008038E1 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63861E1F21B49560008038E1 /* Test.swift */; };
 		63FCED6A218CBB6E0069C62E /* Population.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FCED69218CBB6E0069C62E /* Population.swift */; };
 		63FCED6C218CEF270069C62E /* DrawLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FCED6B218CEF270069C62E /* DrawLines.swift */; };
@@ -30,14 +26,9 @@
 		6354F4162183A1FB006F6C07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6354F4192183A1FB006F6C07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6354F41B2183A1FB006F6C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6354F4212183A5FF006F6C07 /* GenDrift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GenDrift-Bridging-Header.h"; sourceTree = "<group>"; };
-		6354F4222183A600006F6C07 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		6354F4232183A600006F6C07 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
-		6354F4252183ABA2006F6C07 /* BackTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackTableVC.swift; sourceTree = "<group>"; };
-		6354F4272183B775006F6C07 /* Version1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version1.swift; sourceTree = "<group>"; };
-		6354F4292183B821006F6C07 /* Version2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version2.swift; sourceTree = "<group>"; };
-		6354F42B2183B82B006F6C07 /* Version3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version3.swift; sourceTree = "<group>"; };
+		6354F4272183B775006F6C07 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		63861E1F21B49560008038E1 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		63D6EF192204E9F300EC58B5 /* GenDrift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GenDrift-Bridging-Header.h"; sourceTree = "<group>"; };
 		63FCED69218CBB6E0069C62E /* Population.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Population.swift; sourceTree = "<group>"; };
 		63FCED6B218CEF270069C62E /* DrawLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawLines.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,7 +49,7 @@
 			children = (
 				6354F40E2183A1F9006F6C07 /* GenDrift */,
 				6354F40D2183A1F9006F6C07 /* Products */,
-				6354F4212183A5FF006F6C07 /* GenDrift-Bridging-Header.h */,
+				63D6EF192204E9F300EC58B5 /* GenDrift-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,23 +64,59 @@
 		6354F40E2183A1F9006F6C07 /* GenDrift */ = {
 			isa = PBXGroup;
 			children = (
-				6354F40F2183A1F9006F6C07 /* AppDelegate.swift */,
-				6354F4252183ABA2006F6C07 /* BackTableVC.swift */,
-				6354F4112183A1F9006F6C07 /* ViewController.swift */,
-				6354F4132183A1F9006F6C07 /* Main.storyboard */,
-				63FCED6B218CEF270069C62E /* DrawLines.swift */,
-				63FCED69218CBB6E0069C62E /* Population.swift */,
-				6354F4272183B775006F6C07 /* Version1.swift */,
-				6354F4292183B821006F6C07 /* Version2.swift */,
-				6354F42B2183B82B006F6C07 /* Version3.swift */,
-				6354F4162183A1FB006F6C07 /* Assets.xcassets */,
-				6354F4222183A600006F6C07 /* SWRevealViewController.h */,
-				6354F4232183A600006F6C07 /* SWRevealViewController.m */,
-				63861E1F21B49560008038E1 /* Test.swift */,
-				6354F4182183A1FB006F6C07 /* LaunchScreen.storyboard */,
-				6354F41B2183A1FB006F6C07 /* Info.plist */,
+				63D6EEF92204D7C500EC58B5 /* Storyboard */,
+				63D6EEF82204D7BE00EC58B5 /* Controller */,
+				63D6EEF52204D79500EC58B5 /* Model */,
+				63D6EEF62204D79700EC58B5 /* View */,
+				63D6EEFA2204D97C00EC58B5 /* Support Files */,
 			);
 			path = GenDrift;
+			sourceTree = "<group>";
+		};
+		63D6EEF52204D79500EC58B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63FCED6B218CEF270069C62E /* DrawLines.swift */,
+				63FCED69218CBB6E0069C62E /* Population.swift */,
+				63861E1F21B49560008038E1 /* Test.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63D6EEF62204D79700EC58B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			path = ../View;
+			sourceTree = "<group>";
+		};
+		63D6EEF82204D7BE00EC58B5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6354F4272183B775006F6C07 /* MainViewController.swift */,
+				6354F4112183A1F9006F6C07 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		63D6EEF92204D7C500EC58B5 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				6354F4132183A1F9006F6C07 /* Main.storyboard */,
+				6354F4182183A1FB006F6C07 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		63D6EEFA2204D97C00EC58B5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6354F40F2183A1F9006F6C07 /* AppDelegate.swift */,
+				6354F4162183A1FB006F6C07 /* Assets.xcassets */,
+				6354F41B2183A1FB006F6C07 /* Info.plist */,
+			);
+			path = "Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,16 +196,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6354F42C2183B82B006F6C07 /* Version3.swift in Sources */,
 				6354F4122183A1F9006F6C07 /* ViewController.swift in Sources */,
 				63FCED6C218CEF270069C62E /* DrawLines.swift in Sources */,
-				6354F42A2183B821006F6C07 /* Version2.swift in Sources */,
 				6354F4102183A1F9006F6C07 /* AppDelegate.swift in Sources */,
-				6354F4262183ABA2006F6C07 /* BackTableVC.swift in Sources */,
-				6354F4282183B775006F6C07 /* Version1.swift in Sources */,
+				6354F4282183B775006F6C07 /* MainViewController.swift in Sources */,
 				63861E2021B49560008038E1 /* Test.swift in Sources */,
 				63FCED6A218CBB6E0069C62E /* Population.swift in Sources */,
-				6354F4242183A600006F6C07 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,7 +350,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FUCT5BGGNK;
-				INFOPLIST_FILE = GenDrift/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GenDrift/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -348,7 +371,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FUCT5BGGNK;
-				INFOPLIST_FILE = GenDrift/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GenDrift/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

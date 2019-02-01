@@ -25,10 +25,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        Open.target = self.revealViewController()
+//        Open.target = self.revealViewController()
         Open.action = Selector("revealToggle:")
         
-        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+//        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         
         if (varView == 0) {
             Label.text = "Strings"
