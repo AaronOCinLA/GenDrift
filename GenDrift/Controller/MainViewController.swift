@@ -23,8 +23,7 @@ class MainViewController : UIViewController {
     @IBOutlet weak var sliderNumGen: UISlider!
     @IBOutlet weak var btnSimulate: UIButton!
     
-    
-    
+        
     // MARK: - Viewcontroller life cycle
     
     override func viewDidLoad() {
@@ -33,12 +32,6 @@ class MainViewController : UIViewController {
         viewMain.isHidden = true
         
         navigationController?.navigationBar.backgroundColor = UIColor(red: 99, green: 181, blue: 229)
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        removeSubView()
     }
     
     // MARK: - Methods
