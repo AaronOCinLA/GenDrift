@@ -29,7 +29,7 @@ class MainViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        viewMain.isHidden = true
+//        viewMain.isHidden = true
         
         navigationController?.navigationBar.backgroundColor = UIColor(red: 99, green: 181, blue: 229)
     }

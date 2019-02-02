@@ -27,7 +27,6 @@ public class Population {
     // MARK: - Methods
     func getData() -> [Int] {
         
-
         var tempArr = [Int](repeating: 0, count: 640)
         
         // Counters for each alele's

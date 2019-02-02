@@ -89,9 +89,7 @@ class DrawLinesView: UIView {
             arrPathAnimations[i].toValue = NSNumber(value:1.0)
             
             // Add Animation
-            arrPathLayers[i].add(arrPathAnimations[i], forKey: "strokeEnd")
-            
-            layer.isHidden = false
+            arrPathLayers[i].add(arrPathAnimations[i], forKey: "strokeEnd")            
         }
     }
     

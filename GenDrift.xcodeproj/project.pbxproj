@@ -25,7 +25,6 @@
 		6354F4192183A1FB006F6C07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6354F41B2183A1FB006F6C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6354F4272183B775006F6C07 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		63D6EF192204E9F300EC58B5 /* GenDrift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GenDrift-Bridging-Header.h"; sourceTree = "<group>"; };
 		63D6EF1B2205056D00EC58B5 /* UIColor+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ext.swift"; sourceTree = "<group>"; };
 		63FCED69218CBB6E0069C62E /* Population.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Population.swift; sourceTree = "<group>"; };
 		63FCED6B218CEF270069C62E /* DrawLinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawLinesView.swift; sourceTree = "<group>"; };
@@ -47,7 +46,6 @@
 			children = (
 				6354F40E2183A1F9006F6C07 /* GenDrift */,
 				6354F40D2183A1F9006F6C07 /* Products */,
-				63D6EF192204E9F300EC58B5 /* GenDrift-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -361,7 +359,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = na.GenDrift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "GenDrift-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -382,7 +380,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = na.GenDrift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "GenDrift-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
