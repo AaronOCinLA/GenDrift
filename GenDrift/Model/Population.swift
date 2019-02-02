@@ -6,26 +6,26 @@
 //  Copyright © 2018 Digital Dingo. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public class Population {
     var popSize: Int
     var numPop: Int
     var numGen: Int
-    var inputValues: [Int]
-    var maxInputValues: [Int]
     var dblArr: [[Double]]
     var fixLossArr: [Int]
     
-    init(_popSize: Int, _numPop: Int, _numGen: Int) {
+    init(popSize: Int, numPop: Int, numGen: Int) {
         
         // Default initialization
-        popSize = _popSize
-        numPop = _numPop
-        numGen = _numGen
-        inputValues = [100, 10, 100]
-        maxInputValues = [100, 10, 100]  //popSize, numPop, numBen
-        dblArr = [[0.0],[0.0]]
-        fixLossArr = [0,0]
+        self.popSize = popSize
+        self.numPop = numPop
+        self.numGen = numGen
+        self.dblArr = [[0.0],[0.0]]
+        self.fixLossArr = [0,0]
+    }
+    
+    convenience init() {
+        self.init(popSize: 0, numPop: 0, numGen: 0)
     }
 }

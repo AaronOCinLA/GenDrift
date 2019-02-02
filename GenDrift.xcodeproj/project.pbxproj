@@ -14,7 +14,7 @@
 		6354F4282183B775006F6C07 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6354F4272183B775006F6C07 /* MainViewController.swift */; };
 		63D6EF1C2205056D00EC58B5 /* UIColor+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D6EF1B2205056D00EC58B5 /* UIColor+ext.swift */; };
 		63FCED6A218CBB6E0069C62E /* Population.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FCED69218CBB6E0069C62E /* Population.swift */; };
-		63FCED6C218CEF270069C62E /* DrawLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FCED6B218CEF270069C62E /* DrawLines.swift */; };
+		63FCED6C218CEF270069C62E /* DrawLinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FCED6B218CEF270069C62E /* DrawLinesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +28,7 @@
 		63D6EF192204E9F300EC58B5 /* GenDrift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GenDrift-Bridging-Header.h"; sourceTree = "<group>"; };
 		63D6EF1B2205056D00EC58B5 /* UIColor+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ext.swift"; sourceTree = "<group>"; };
 		63FCED69218CBB6E0069C62E /* Population.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Population.swift; sourceTree = "<group>"; };
-		63FCED6B218CEF270069C62E /* DrawLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawLines.swift; sourceTree = "<group>"; };
+		63FCED6B218CEF270069C62E /* DrawLinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawLinesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,6 @@
 		63D6EEF52204D79500EC58B5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				63FCED6B218CEF270069C62E /* DrawLines.swift */,
 				63FCED69218CBB6E0069C62E /* Population.swift */,
 			);
 			path = Model;
@@ -83,6 +82,7 @@
 		63D6EEF62204D79700EC58B5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				63FCED6B218CEF270069C62E /* DrawLinesView.swift */,
 			);
 			name = View;
 			path = ../View;
@@ -201,7 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63FCED6C218CEF270069C62E /* DrawLines.swift in Sources */,
+				63FCED6C218CEF270069C62E /* DrawLinesView.swift in Sources */,
 				6354F4102183A1F9006F6C07 /* AppDelegate.swift in Sources */,
 				6354F4282183B775006F6C07 /* MainViewController.swift in Sources */,
 				63FCED6A218CBB6E0069C62E /* Population.swift in Sources */,
